@@ -89,7 +89,7 @@ const CheckoutPage = () => {
     };
 
     try {
-      await axios.post('http://localhost:5000/api/orders', orderData);
+      await axios.post('https://esalesone-backend.onrender.com/api/orders', orderData);
       setStatus('success');
       setForm({
         name: '',
